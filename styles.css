@@ -122,6 +122,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   color: #fff;
+  cursor: pointer;
 }
 
 .right button:hover {
@@ -218,6 +219,11 @@ body {
 
 .bottom-container .list-items .list li {
   padding: 35px;
+  cursor: pointer;
+}
+
+.bottom-container .list-items .list li:hover {
+  color: rgb(188, 188, 188);
 }
 
 .footer {
@@ -233,6 +239,11 @@ body {
 .smug-mug {
   position: relative;
   right: 10px;
+  cursor: pointer;
+}
+
+.smug-mug:hover {
+  color: rgb(188, 188, 188);
 }
 
 .social-icons {
@@ -241,12 +252,17 @@ body {
 
 .social-icons #facebook {
   padding: 20px;
+  cursor: pointer;
 }
 
 .social-icons #twitter {
   padding: 20px;
+  cursor: pointer;
+
 }
 
 .social-icons #instagram {
   padding: 20px;
+  cursor: pointer;
+
 }

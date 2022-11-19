@@ -16,6 +16,7 @@
       <div class="nav-container">
         <nav class="nav-bar">
           <img src="images/images.png" alt="logo" class="logo">
+          <!-- <h1 class="logo">flickr</h1> -->
           <div class="search-container">
             <i class="fas fa-search" id="search"></i><input type="search" placeholder="Photos, people, or groups">
           </div>
@@ -67,8 +68,8 @@
   </div>
 
   <script>
-    function changeBg() {
 
+    function changeBg() {
       const images = [
         `url('images/img1.jpg')`,
         `url('images/img2.jpg')`,
@@ -76,15 +77,18 @@
         `url('images/img4.jpg')`,
         `url('images/img5.jpg')`,
         `url('images/img6.jpg')`,
-        `url('images/img7.jpg')`,
-        `url('images/img8.jpg')`
+        `url('images/img9.jpg')`,
+        `url('images/img8.jpg')`,
+        `url('images/img10.jpg')`
       ]
+
       const section = document.querySelector('.pic-container')
       const bg = images[Math.floor(Math.random() * images.length)];
+
       section.style.backgroundImage = bg;
     }
+    setInterval(changeBg, 6000)
 
-    setInterval(changeBg, 9000)
   </script>
 </body>
 
