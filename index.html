@@ -11,21 +11,81 @@
 </head>
 
 <body>
-  <header>
-    <div class="nav-container">
-      <nav class="nav-bar">
-        <img src="images/Flickr-Logo.jpg" alt="logo" class="logo">
-        <div class="search-container">
-          <i class="fas fa-search" id="search"></i><input type="search">
-        </div>
-        <ul>
-          <li class="right">Sign Up</li>
-          <li class="right"><button>Log In</button></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="pic-container">
+    <header>
+      <div class="nav-container">
+        <nav class="nav-bar">
+          <img src="images/images.png" alt="logo" class="logo">
+          <div class="search-container">
+            <i class="fas fa-search" id="search"></i><input type="search" placeholder="Photos, people, or groups">
+          </div>
+          <ul>
+            <li class="right log-in">Log In</li>
+            <li class="right"><button>Sign Up</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  </header>
+    <main class="content">
+      <div class="main-container">
+        <h1 class="head">Find your inspiration.</h1>
+        <p class="para">Join the Flickr community, home to tens of billions of photos and 2 million groups.</p>
+        <button class="main-button">Start for free</button>
+      </div>
+    </main>
+  </div>
+
+  <div class="footer">
+    <div class="bottom-container">
+      <div class="list-items">
+        <ul class="list">
+          <li>About</li>
+          <li>Jobs</li>
+          <li>Blog</li>
+          <li>Developers</li>
+          <li>Guidelines</li>
+          <li>Help</li>
+          <li>Help Forum</li>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Cookies</li>
+          <li>English</li>
+        </ul>
+      </div>
+
+      <div class="smug-mug">
+        <p>SmugMug+Flickr.</p>
+      </div>
+
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook fa-xl" id="facebook"></i>
+        <i class="fa-brands fa-twitter fa-xl" id="twitter"></i>
+        <i class="fa-brands fa-instagram fa-xl" id="instagram"></i>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function changeBg() {
+
+      const images = [
+        `url('images/img1.jpg')`,
+        `url('images/img2.jpg')`,
+        `url('images/img3.jpg')`,
+        `url('images/img4.jpg')`,
+        `url('images/img5.jpg')`,
+        `url('images/img6.jpg')`,
+        `url('images/img7.jpg')`,
+        `url('images/img8.jpg')`
+      ]
+      const section = document.querySelector('.pic-container')
+      const bg = images[Math.floor(Math.random() * images.length)];
+      section.style.backgroundImage = bg;
+    }
+
+    setInterval(changeBg, 9000)
+  </script>
 </body>
 
 </html>
