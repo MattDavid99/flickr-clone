@@ -93,6 +93,7 @@ body {
   height: 35px;
   margin-left: 20px;
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .nav-bar .container {
@@ -123,6 +124,10 @@ body {
   font-weight: 600;
   color: #fff;
   cursor: pointer;
+}
+
+.log-in:hover {
+  color: rgb(255, 255, 255);
 }
 
 .right button:hover {
